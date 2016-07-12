@@ -64,7 +64,7 @@ utf8 = require <span class="string">"./lib/utf8"</span></code></pre>
 <p><code>sha</code> is the git SHA1 of the file.</p>
 
   </div>
-  <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">File</span></span> = (I={}, self=Model(I)) -&gt;
+  <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">File</span></span> = (I={}) -&gt;
   defaults I,
     content: <span class="string">""</span>
     modified: <span class="literal">false</span>
@@ -75,6 +75,8 @@ utf8 = require <span class="string">"./lib/utf8"</span></code></pre>
   <span class="keyword">throw</span> <span class="string">"File must have a path"</span> <span class="keyword">unless</span> I.path
 
   I.initialSha ?= I.sha
+
+  self=Model(I)
 
   self.attrObservable Object.keys(I)...
 

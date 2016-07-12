@@ -22,7 +22,7 @@
   <div class="content"><pre><code class="lang-haml">%ul.filetree
   - selectedFile = @selectedFile
   - files = @files
-  - each files, (file) -&gt;
+  - files.forEach (file) -&gt;
     - select = (e) -&gt; selectedFile(file) if e.target.nodeName is &#39;LI&#39;
     %li(click=select)= file.displayName
       - remove = -&gt; files.remove(file) if confirm(&quot;Delete #{file.path()}?&quot;)
