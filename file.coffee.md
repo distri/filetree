@@ -4,10 +4,10 @@ File Model
 The `File` model represents a file in a file system. It is populated by data
 returned from the Github API.
 
-    Composition = require "composition"
-    Observable = require "observable"
     {defaults} = require "util"
 
+    Model = require "model"
+    Observable = Model.Observable
     {SHA1} = require "sha1"
     utf8 = require "./lib/utf8"
 
@@ -23,7 +23,7 @@ Attributes
 
 `sha` is the git SHA1 of the file.
 
-    File = (I={}) ->
+    File = (I={}, self=Model(I)) ->
       defaults I,
         content: ""
         modified: false
@@ -34,8 +34,6 @@ Attributes
       throw "File must have a path" unless I.path
 
       I.initialSha ?= I.sha
-
-      self = Composition(I)
 
       self.attrObservable Object.keys(I)...
 

@@ -1,18 +1,13 @@
 Filetree Model
 ==============
-
+    
+    Model = require "model"
     File = require("./file")
-
-    Composition = require "composition"
-    {defaults} = require "util"
 
 The `Filetree` model represents a tree of files.
 
-    Filetree = (I={}) ->
-      defaults I,
-        files: []
-
-      self = Composition(I)
+    Filetree = (I={}, self=Model(I)) ->
+      I.files ?= []
 
       self.attrModels "files", File
 
