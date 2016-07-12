@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 1468304536865
+
+CACHE:
+index.html
+../update-model.json
+
+
+NETWORK:
+https://*
+http://*
+*
