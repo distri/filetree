@@ -23,7 +23,7 @@ Attributes
 
 `sha` is the git SHA1 of the file.
 
-    File = (I={}, self=Model(I)) ->
+    File = (I={}) ->
       defaults I,
         content: ""
         modified: false
@@ -34,6 +34,8 @@ Attributes
       throw "File must have a path" unless I.path
 
       I.initialSha ?= I.sha
+
+      self=Model(I)
 
       self.attrObservable Object.keys(I)...
 
