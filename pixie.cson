@@ -1,4 +1,4 @@
-version: "0.4.0-pre.0"
+version: "0.4.0-pre.1"
 dependencies:
   model: "distri/model:v0.2.0-pre.2"
   sha1: "distri/sha1:v0.1.0"
