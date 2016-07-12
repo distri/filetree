@@ -229,7 +229,7 @@
     },
     "pixie.cson": {
       "path": "pixie.cson",
-      "content": "version: \"0.4.0-pre.0\"\ndependencies:\n  model: \"distri/model:v0.2.0-pre.2\"\n  sha1: \"distri/sha1:v0.1.0\"\n  util: \"distri/util:v0.1.0\"\n",
+      "content": "version: \"0.4.0-pre.1\"\ndependencies:\n  model: \"distri/model:v0.2.0-pre.2\"\n  sha1: \"distri/sha1:v0.1.0\"\n  util: \"distri/util:v0.1.0\"\n",
       "mode": "100644",
       "type": "blob"
     },
@@ -292,7 +292,7 @@
     },
     "pixie": {
       "path": "pixie",
-      "content": "module.exports = {\"version\":\"0.4.0-pre.0\",\"dependencies\":{\"model\":\"distri/model:v0.2.0-pre.2\",\"sha1\":\"distri/sha1:v0.1.0\",\"util\":\"distri/util:v0.1.0\"}};",
+      "content": "module.exports = {\"version\":\"0.4.0-pre.1\",\"dependencies\":{\"model\":\"distri/model:v0.2.0-pre.2\",\"sha1\":\"distri/sha1:v0.1.0\",\"util\":\"distri/util:v0.1.0\"}};",
       "type": "blob"
     },
     "sample_data": {
@@ -329,7 +329,7 @@
   "progenitor": {
     "url": "https://danielx.net/editor/"
   },
-  "version": "0.4.0-pre.0",
+  "version": "0.4.0-pre.1",
   "entryPoint": "main",
   "repository": {
     "branch": "update-model",
